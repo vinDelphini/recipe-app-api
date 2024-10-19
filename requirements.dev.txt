@@ -1,1 +1,2 @@
+# to get the latest patch version which may come with latest bug-fixes & security fixes
 flake8>=3.9.2,<3.10
