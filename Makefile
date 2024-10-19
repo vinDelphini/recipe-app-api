@@ -1,7 +1,9 @@
 clean:
-	@echo "Removing cached Python files"
 	@find . -name "*.pyc" -exec rm -rf {} \;
 	@find . -name "__pycache__" -delete
+	@echo "Clean complete"
+
+git-clean:
 	@echo "Removing cached Git files"
 	@-git rm -r --cached . 2>/dev/null || echo "No cached files to remove."
 	@echo "Clean complete"
